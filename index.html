@@ -4,51 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <title>Zendesk Study Site </title>
+    <script defer src="dynamic-content.js"></script>
+    <title>Your Dynamic Study Website</title>
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#section2">Subjects</a></li>
-            <li><a href="#section3">Study Tips</a></li>
-            <li><a href="#section4">Resources</a></li>
+            <li><a href="#" onclick="loadContent('section1')">Home</a></li>
+            <li><a href="#" onclick="loadContent('section2')">Subjects</a></li>
+            <li><a href="#" onclick="loadContent('section3')">Study Tips</a></li>
+            <li><a href="#" onclick="loadContent('section4')">Resources</a></li>
         </ul>
     </nav>
 
     <!-- Home Page Sections -->
-    <section id="Home">
-        <h2>Welcome to Your Study Hub!</h2>
-        <p>This is a place where you can find valuable resources, study tips, and information on various subjects.</p>
+    <section id="section1">
+        <h2>Welcome to Your Dynamic Study Hub!</h2>
+        <p id="section1Content">This is a place where you can find valuable resources, study tips, and information on various subjects.</p>
     </section>
 
     <section id="section2">
         <h2>Subjects</h2>
-        <p>Explore our wide range of subjects and enhance your knowledge.
-
-        </p>
-        <!-- Add more content about subjects -->
+        <p id="section2Content">Explore our wide range of subjects and enhance your knowledge.</p>
+        <button onclick="loadSubjects()">Load Subjects</button>
     </section>
 
     <section id="section3">
         <h2>Study Tips</h2>
-        <p>Improve your study habits with these effective study tips.</p>
-        <!-- Add study tips and advice -->
+        <p id="section3Content">Improve your study habits with these effective study tips.</p>
+        <button onclick="loadStudyTips()">Load Study Tips</button>
     </section>
 
     <section id="section4">
         <h2>Resources</h2>
-        <p>Discover useful resources to aid your learning journey.</p>
-        <!-- Add links, books, and other study resources -->
+        <p id="section4Content">Discover useful resources to aid your learning journey.</p>
+        <button onclick="loadResources()">Load Resources</button>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Your Study Website</p>
+        <p>&copy; 2023 Your Dynamic Study Website</p>
     </footer>
 
 </body>
 </html>
+
